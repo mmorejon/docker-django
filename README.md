@@ -89,6 +89,22 @@ Los usuarios se crean utilizando el mismo comando descrito en la documentación 
 docker-compose run web python manage.py createsuperuser
 ```
 
+## Paso Seis - Entorno de Producción
+
+Para utilizar la aplicación en el entorno de producción se debe configurar el fichero `docker-compose.yml`. En este fichero se agrega el comando a ejecutar para que utilice la configuración del entorno de producción.
+
+La línea que se adiciona es `command: ./run-production.sh` quedando el fichero de la siguiente forma:
+
+```
+web:
+  image: projectname:1.0
+  command: ./run-production.sh
+  volumes:
+    - .:/code
+  ports:
+    - "8000:80"
+```
+
 ### Enlaces relacionados con el tema
 
 * <a target="_blank" href="https://docs.docker.com/compose/django/">Docker Compose con proyectos Django</a>
