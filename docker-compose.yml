@@ -1,0 +1,6 @@
+web:
+  image: projectname:1.0
+  volumes:
+    - .:/code
+  ports:
+    - "8000:80"

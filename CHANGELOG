@@ -1,0 +1,16 @@
+# Change Log
+Todos los cambios realizados al proyecto serán documentados en este documento.
+
+## [Unreleased]
+### Added
+- Despliegue para entornos de producción.
+- Fichero de configuración de Nginx.
+- Configuración del `cron` para envío de mensajes.
+### Fixed
+- Clean instalations files.
+
+## [0.1.0] - 2016-02-12
+### Added
+- Estructura de los proyectos.
+- Fichero run para programadores.
+- Documentación básica.
