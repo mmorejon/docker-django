@@ -4,12 +4,10 @@ Django - Docker
 Pasos para iniciar un proyecto con Django utilizando Docker dentro del flujo de trabajo. Se utiliza `projectname` para hacer referencia al nombre del projecto.
 
 ### Pre requisito
-_______________
 
 * Tener instalado **Docker**. Si está utilizando Mac OS X instale **Docker Toolbox**.
 
 ## Paso Uno - Establecer Estructura.
-_______________
 
 **_Descargar estructura del proyecto_**
 
@@ -36,7 +34,6 @@ git init
 ```
 
 ## Paso Dos - Crear Imagen de Docker
-_______________
 
 **_Crear Imagen en Docker_**
 
@@ -59,7 +56,6 @@ image: projectname:1.0
 ```
 
 ## Paso Tres - Crear Proyecto Django
-_______________
 
 **_Crear Proyecto_**
 Se crea el proyecto utilizando los mismos comandos descritos por el sitio Django.
@@ -80,7 +76,6 @@ Ctrl-C
 ```
 
 ## Paso Cuatro - Crear Aplicación
-_______________
 
 Para crear una aplicación dentro del proyecto Django se utiliza el siguiente comando:
 ```
@@ -88,7 +83,6 @@ docker-compose run web python manage.py startapp app
 ```
 
 ## Paso Cinco - Crear Usuario
-_______________
 
 Los usuarios se crean utilizando el mismo comando descrito en la documentación de Django.
 ```
@@ -96,7 +90,6 @@ docker-compose run web python manage.py createsuperuser
 ```
 
 ### Enlaces relacionados con el tema
-_______________
 
 * <a target="_blank" href="https://docs.docker.com/compose/django/">Docker Compose con proyectos Django</a>
 * <a target="_blank" href="https://docs.djangoproject.com/es/1.9/intro/tutorial01/">Primeros pasos en projectos con Django</a>
