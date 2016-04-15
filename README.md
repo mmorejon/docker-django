@@ -13,7 +13,7 @@ Pasos para iniciar un proyecto con Django utilizando Docker dentro del flujo de 
 
 Se descarga el proyecto que contiene la estructura general.
 ```
-git https://github.com/mmorejon/docker-django.git projectname
+git clone https://github.com/mmorejon/docker-django.git projectname
 ```
 
 **_Eliminar carpeta de Git_**
