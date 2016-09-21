@@ -91,9 +91,15 @@ docker-compose run web python manage.py createsuperuser
 
 ## Paso Seis - Entorno de Producción
 
-Para utilizar la aplicación en el entorno de producción se debe configurar el fichero `docker-compose.yml`. En este fichero se agrega el comando a ejecutar para que utilice la configuración del entorno de producción.
+Para utilizar la aplicación en el entorno de producción se debe configurar los siguientes ficheros:
 
-La línea que se adiciona es `command: ./run-production.sh` quedando el fichero de la siguiente forma:
+Adicionar al final del fichero `projectname/settings.py` la siguiente línea:
+
+```
+STATIC_ROOT = './static/'
+```
+
+Adicionar la línea `command: ./run-production.sh` al fichero `docker-compose.yml` quedando de la siguiente forma:
 
 ```
 web:
@@ -104,6 +110,8 @@ web:
   ports:
     - "8000:80"
 ```
+
+Para finalizar debe modificar el nombre del proyecto `projectname` en el fichero `conf/app.ini`.
 
 ### Enlaces relacionados con el tema
 
